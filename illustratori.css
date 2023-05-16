@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: 'Krub', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    background-color: #C7ACD5;
+}
+
+body.green {
+    background-color: #508F62;
+    
+}
+
+body.pink {
+    background-color: #D08FA0;
+    ;
+}
+
+body.red {
+    background-color: #D36564;
+
+}
+
+body.orange {
+    background-color: #FF8D45;
+}
+
+body.blue {
+    background-color: #7DADE4;
+
+}
+
+body.yellow {
+    background-color: #FFB03A;
+
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #6FCDD5;
+    z-index: 100;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+a {
+    align-items: center;
+    text-align: center;
+    color: #F5F5F5;  
+}
+
+
+div.testata {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    height: 100px;
+    background: #6FCDD5;
+    z-index: 100;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+}
+
+main, footer {
+    max-width: 2000px;
+    margin: auto;
+    padding: 60px;
+}
+
+
+section.barra {
+    background:white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+section.barra h1 {
+    margin: 0;
+    padding: 40px 10px;
+    font-size: 30px;
+    color: #6FCDD5;
+}
+
+p.info {
+    background-color: white;
+    margin: 10rem;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    padding: 3%;
+}
+
+main p.bio {
+    background-color: white;
+    margin: 10rem;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    padding: 3%;
+}
+
+
+.grid {
+    column-count: 3;
+    column-gap: 16px;
+}
+
+.grid img {
+    margin-bottom: 16px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+footer p {
+    border-top:1px solid rgb(255, 255, 255);
+    margin: 0;
+    padding: 20px 0;
+    font-size: 20px;
+    color: white;
+}
+
+@media (max-width: 800px) { 
+    body { 
+        background: #6FCDD5;
+    }
+    div.testata {
+        background: #C7ACD5;
+    }
+
+section.barra h1 {
+    color:#C7ACD5;
+}
+}
+
+@media (max-width: 400px) { 
+     body {
+        background: #6FCDD5;
+    }
+    div.testata {
+        background: #C7ACD5;
+    }
+
+
+section.barra h1 {
+    color:#C7ACD5;
+}
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+     
+    .grid {
+        column-count: 1;
+    }
+}
